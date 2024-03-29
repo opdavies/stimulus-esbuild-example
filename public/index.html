@@ -4,8 +4,13 @@
     <title>Stimulus esbuild example</title>
   </head>
   <body>
-    <div data-controller="hello">
-      <h1>Hello, World!</h1>
+    <div data-controller="count">
+      <p>Count: <span data-count-target="result"></span></p>
+
+      <div>
+        <button type="button" data-action="count#increment">+</button>
+        <button type="button" data-action="count#decrement">-</button>
+      </div>
     </div>
 
     <script src="/build/app.js"></script>
