@@ -6,6 +6,7 @@ export default class extends Controller {
   static values = {
     canBeNegative: Boolean,
     count: Number,
+    maximumCountNumber: Number,
   };
 
   connect() {
@@ -32,6 +33,12 @@ export default class extends Controller {
 
   increment() {
     console.log("count#increment");
+
+    const maximumCountNumber = this.maximumCountNumberValue || 10;
+
+    if (this.countValue === maximumCountNumber) {
+      return;
+    }
 
     this.countValue = this.countValue + 1;
   }

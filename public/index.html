@@ -4,7 +4,11 @@
     <title>Stimulus esbuild example</title>
   </head>
   <body>
-    <div data-controller="count" data-count-can-be-negative-value="true">
+    <div
+      data-controller="count"
+      data-count-can-be-negative-value="true"
+      data-count-maximum-count-number-value="5"
+    >
       <p>Count: <span data-count-target="result"></span></p>
 
       <div>
@@ -13,7 +17,10 @@
       </div>
     </div>
 
-    <div data-controller="count" data-count-can-be-negative-value="false">
+    <div
+      data-controller="count"
+      data-count-can-be-negative-value="false"
+    >
       <p>Count: <span data-count-target="result"></span></p>
 
       <div>
