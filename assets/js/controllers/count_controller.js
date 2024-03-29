@@ -4,6 +4,7 @@ export default class extends Controller {
   static targets = ["result"];
 
   static values = {
+    canBeNegative: Boolean,
     count: Number,
   };
 
@@ -22,9 +23,11 @@ export default class extends Controller {
   decrement() {
     console.log("count#decrement");
 
-    if (this.countValue > 0) {
-      this.countValue = this.countValue - 1;
+    if (this.canBeNegativeValue === false && this.countValue === 0) {
+      return;
     }
+
+    this.countValue = this.countValue - 1;
   }
 
   increment() {
