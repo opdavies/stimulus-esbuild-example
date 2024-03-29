@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "esbuild": "^0.20.2",
+    "esbuild-plugin-stimulus": "^0.1.5"
+  },
+  "dependencies": {
+    "@hotwired/stimulus": "^3.2.2"
+  }
+}

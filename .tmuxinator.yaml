@@ -1,0 +1,11 @@
+name: stimulus-esbuild-example
+root: .
+
+windows:
+  - vim: nvim
+  - server:
+      layout: tiled
+      panes:
+        - just serve
+        - just build
+  - shell:
