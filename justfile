@@ -2,6 +2,7 @@ _default:
     just --list
 
 build:
+    npm install
     node assets/esbuild.config.mjs
 
 serve:
